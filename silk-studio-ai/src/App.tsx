@@ -68,7 +68,7 @@ export default function App() {
 
     try {
       const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
-      const model = "gemini-2.5-flash-image";
+      const model = "gemini-2.0-flash";
 
       const base64Data = image.split(',')[1];
       const mimeType = image.split(';')[0].split(':')[1];
